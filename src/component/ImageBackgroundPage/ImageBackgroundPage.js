@@ -37,7 +37,7 @@ const ImageBackgroundPage = () => {
   const generateDivs = () => {
     const divs = []
     for (let i = 0; i < numberOfDivs; i++) {
-      const isTransparent = i % 2 == 0
+      const isTransparent = i % 2 === 0
       divs.push(
         <div
           key={i}
