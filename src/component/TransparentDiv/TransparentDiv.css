@@ -1,0 +1,11 @@
+.scrolling-bg {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url('/src/UI/home/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  overflow: hidden;
+}

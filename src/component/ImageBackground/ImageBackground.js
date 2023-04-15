@@ -1,11 +1,11 @@
-import React from "react"
-import './HomePage.css'
-import TransparentDiv from "../../../component/TransparentDiv/TransparentDiv"
+import React, { useEffect, useRef } from 'react'
+import './ImageBackground.css'
+import TransparentDiv from '../TransparentDiv/TransparentDiv'
 
-const HomePage = () => {
+const ImageBackground = () => {
+
   const transparentDivStyle = {
     height: '17%',
-    backgroundPositionY: '30%',
   }
   const divStyle1 = {
     height: '12%',
@@ -28,7 +28,7 @@ const HomePage = () => {
   }
 
   return (
-    <div className='home-page'>
+    <div className="image-background">
       <TransparentDiv className='grid-item solid-div' divStyle={transparentDivStyle} />
       <div className='grid-item solid-div' style={divStyle1} />
       <div className='grid-item solid-div' style={divStyle2} />
@@ -39,4 +39,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default ImageBackground
