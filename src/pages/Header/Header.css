@@ -1,0 +1,17 @@
+@import '/src/common/Root.css';
+
+.header {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-title {
+  color: white;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600; /* 设置较粗的字体权重 */
+  letter-spacing: -0.5px; /* 减小字母间距 */
+  font-family: 'Oswald', sans-serif;
+}
