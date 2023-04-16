@@ -1,7 +1,7 @@
 import React from 'react'
 import './FloatingDiv.css'
 
-const FloatingDiv = ({ div, direction = 'left-to-right' }) => {
+const FloatingDiv = ({ children, direction = 'left-to-right', style }) => {
   const getAnimationClass = () => {
     switch (direction) {
       case 'left-to-right':
@@ -17,8 +17,8 @@ const FloatingDiv = ({ div, direction = 'left-to-right' }) => {
 
   return (
     <div className="floating-div-container">
-      <h1 className={`floating-div ${getAnimationClass()}`}>{div}</h1>
-    </div>
+      <div className={`floating-div ${getAnimationClass()}`} style={style}>{children}</div>
+    </div >
   )
 }
 

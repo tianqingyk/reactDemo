@@ -91,3 +91,10 @@
   --color_43: 252, 251, 252;
   --maxViewportSize: 1920;
 }
+
+@font-face {
+  font-family: 'Oswald-ExtraLight';
+  src: url('/src/assets/fonts/Oswald-ExtraLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,7 +1,8 @@
 import './App.css'
 import React, { Component } from 'react'
-import Header from './pages/Header/Header'
+
 import HomePage from './pages/Main/HomePage/HomePage'
+import Header from './component/Header/Header'
 
 class App extends Component {
   render () {

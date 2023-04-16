@@ -1,6 +1,60 @@
+@import '/src/common/Root.css';
+
 .home-page {
   display: flex;
   flex-direction: column;
   height: 300vh;
   overflow: hidden;
+}
+
+.transparentDivStyle {
+  height: 17%;
+  background-image: url('/src/UI/home/background.jpg');
+}
+
+.transparentDivStyle2 {
+  height: 12%;
+  background-image: url('/src/UI/home/background2.jpg');
+}
+
+.title-style {
+  font-size: 43px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.english-style {
+  font-family: 'Oswald-ExtraLight', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 0em;
+}
+
+.chinese-style {
+  font-family: sacramento, cursive;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0em;
+}
+
+/* Block1 */
+.divStyle1 {
+  height: 442px;
+  background-color: white;
+}
+
+/* Block2 */
+.divStyle2 {
+  height: 463px;
+  background-color: black;
+}
+
+/* Block3*/
+.divStyle3 {
+  height: 774px;
+  background-color: blue;
+}
+
+.divStyle4 {
+  height: 392px;
+  background-color: black;
 }
