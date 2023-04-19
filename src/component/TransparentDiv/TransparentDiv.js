@@ -14,7 +14,7 @@ const TransparentDiv = ({ children, className, backgroundPositionY }) => {
       if (!parallaxBg.current) {
         return
       }
-      console.log(backgroundPositionY)
+
       const scrollTop = (window.pageYOffset || document.documentElement.scrollTop) * scrollSpeed
       const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
       const scrollPercent = (scrollTop / docHeight) * 100
