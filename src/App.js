@@ -20,13 +20,12 @@ class App extends Component {
         <Router basename='/rectDemo'>
           <Routes>
             <Route path="/" exact Component={HomePage} />
-            <Route path="/contact" Component={Contact} />
-            <Route path="/death" Component={Death} />
-            <Route path="/deconstruction" Component={Deconstruction} />
-            <Route path="/salome" Component={Salome} />
+            <Route path="/contact" exact Component={Contact} />
+            <Route path="/death" exact Component={Death} />
+            <Route path="/deconstruction" exact Component={Deconstruction} />
+            <Route path="/salome" exact Component={Salome} />
           </Routes>
         </Router>
-        <Navbar />
         <Footer />
       </div>
     )
