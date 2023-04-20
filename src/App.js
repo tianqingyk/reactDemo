@@ -12,13 +12,14 @@ import Navbar from './component/Navbar/Navbar'
 
 
 class App extends Component {
+
   render () {
     return (
       <div className="App">
         <Header />
-        <Router>
+        <Router basename='/rectDemo'>
           <Routes>
-            <Route path="/" Component={HomePage} />
+            <Route path="/" exact Component={HomePage} />
             <Route path="/contact" Component={Contact} />
             <Route path="/death" Component={Death} />
             <Route path="/deconstruction" Component={Deconstruction} />
