@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './FloatingDiv.css'
 
 const FloatingDiv = ({ children, containerClassName, className, direction = 'left-to-right', style }) => {
