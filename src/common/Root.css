@@ -98,3 +98,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Arial';
+  src: url('/src/assets/fonts/Arial.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/src/assets/fonts/Helvetica\ Verbundene.ttf') format('truetype');
+}

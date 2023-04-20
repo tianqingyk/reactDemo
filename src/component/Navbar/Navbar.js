@@ -1,32 +1,37 @@
-
-
-
 import React, { useState } from "react"
 import "./Navbar.css"
+import FloatingDiv from "../FloatingDiv/FloatingDiv"
 
 function Navbar ({ currentPage }) {
 
   const menuItems = [
     {
       title: "HOME 主页",
-      link: "",
+      link: "/",
       submenu: []
     },
     {
       title: "GALLERY 作品集",
-      link: "",
+      link: "/gallery",
       submenu: [
-        { title: 'DEATH IN VENICE', link: "" },
+        {
+          title: 'DEATH IN VENICE',
+          link: "/death"
+        },
         {
           title: `DECONSTRUCTION
-        BUSHIDO`, link: ""
+        BUSHIDO`,
+          link: "/deconstruction"
         },
-        { title: 'SALOME', link: "" }
+        {
+          title: 'SALOME',
+          link: "/salome"
+        }
       ]
     },
     {
-      title: "HOME 主页",
-      link: "",
+      title: "CONTACT 联系我们",
+      link: "/contact",
       submenu: []
     }
   ]
@@ -34,35 +39,38 @@ function Navbar ({ currentPage }) {
   const [submenu, setSubmenu] = useState(null)
 
   return (
-    <div className="navbar-div" onMouseLeave={() => setSubmenu(null)}>
-      <nav className="navbar">
-        {menuItems.map((item, index) => (
-          <NavItem
-            key={index}
-            title={item.title}
-            link={item.link}
-            submenu={item.submenu}
-            isActive={currentPage === item.link}
-            currentPage={currentPage}
-            setSubmenu={setSubmenu}
-          />
-        ))}
-      </nav>
-      <nav className="submenu" onMouseLeave={() => setSubmenu(null)}>
+    <FloatingDiv direction="top-to-bottom">
+      <div className="navbar-div" onMouseLeave={() => setSubmenu(null)}>
+        <nav className="navbar">
+          {menuItems.map((item, index) => (
+            <NavItem
+              key={index}
+              title={item.title}
+              link={item.link}
+              submenu={item.submenu}
+              isActive={currentPage === item.link || (item.submenu && item.submenu.find((v) => v.link === currentPage))}
+              currentPage={currentPage}
+              setSubmenu={setSubmenu}
+            />
+          ))}
+        </nav>
+
         {submenu && submenu.length > 0 && (
-          <>
+          <nav className="submenu">
             {submenu.map((item, index) => (
               <SubItem
                 key={index}
                 title={item.title}
                 link={item.link}
+                isActive={currentPage === item.link}
               />
             ))}
-          </>
+          </nav>
         )
         }
-      </nav>
-    </div>
+
+      </div >
+    </FloatingDiv>
   )
 }
 
@@ -73,12 +81,12 @@ function NavItem ({ title, link, submenu, isActive, currentPage, setSubmenu }) {
   }
   return (
     <div
-      className={`${submenu.length > 0 ? 'nav-item' : 'nav-item-default'}  `}
+      className={` ${submenu.length > 0 ? 'nav-item' : 'nav-item-default'} `}
       onMouseEnter={handleMouseEnter}
     >
       <a
         href={isActive ? "#" : link}
-        className={`nav-text ${isActive ? "disabled" : ""}`}
+        className={`nav-text ${isActive ? "nav-text-hover" : ""} ${isActive || submenu.length > 0 ? "disabled" : ""}`}
       >
         {title}
       </a>
@@ -86,14 +94,14 @@ function NavItem ({ title, link, submenu, isActive, currentPage, setSubmenu }) {
   )
 }
 
-function SubItem ({ title, link }) {
+function SubItem ({ title, link, isActive }) {
   return (
     <div
       className="submenu-item"
     >
       <a
-        href={false ? "#" : link}
-        className={`submenu-text`}
+        href={isActive ? "#" : link}
+        className={`submenu-text ${isActive ? "submenu-text-hover disabled" : ""}`}
       >
         {title}
       </a>

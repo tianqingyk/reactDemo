@@ -1,0 +1,12 @@
+.contact {
+  height: 200px;
+}
+
+.text-style {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 180px;
+  font-family: oswald-medium, oswald, sans-serif;
+  font-size: 21px;
+}
