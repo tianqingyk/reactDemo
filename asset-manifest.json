@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/rectDemo/static/css/main.d0afdc93.css",
-    "main.js": "/rectDemo/static/js/main.1a36db4c.js",
+    "main.css": "/rectDemo/static/css/main.0ea73ade.css",
+    "main.js": "/rectDemo/static/js/main.61193f56.js",
+    "static/media/Arial.ttf": "/rectDemo/static/media/Arial.c54859dda733c50328d8.ttf",
+    "static/media/1e68ed_~mv2.jpg": "/rectDemo/static/media/1e68ed_2879319be07049e5872f32c2f8ec991e~mv2.f3ffd6139e4d5c418e89.jpg",
     "static/media/background2.jpg": "/rectDemo/static/media/background2.7e8e90147096af27fe07.jpg",
     "static/media/background.jpg": "/rectDemo/static/media/background.e33633f4f335c2ef58c3.jpg",
+    "static/media/Helvetica Verbundene.ttf": "/rectDemo/static/media/Helvetica Verbundene.5ca4c6eb1ddb5df6103b.ttf",
+    "static/media/2.jpg": "/rectDemo/static/media/2.791a67300a52d0775f3b.jpg",
     "static/media/Oswald-ExtraLight.ttf": "/rectDemo/static/media/Oswald-ExtraLight.91951892dbc8636d8f73.ttf",
+    "static/media/3_edited.jpg": "/rectDemo/static/media/3_edited.03723c29750ba609c037.jpg",
+    "static/media/2.webp": "/rectDemo/static/media/2.23d401cfef37178c2197.webp",
     "index.html": "/rectDemo/index.html",
-    "main.d0afdc93.css.map": "/rectDemo/static/css/main.d0afdc93.css.map",
-    "main.1a36db4c.js.map": "/rectDemo/static/js/main.1a36db4c.js.map"
+    "main.0ea73ade.css.map": "/rectDemo/static/css/main.0ea73ade.css.map",
+    "main.61193f56.js.map": "/rectDemo/static/js/main.61193f56.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0afdc93.css",
-    "static/js/main.1a36db4c.js"
+    "static/css/main.0ea73ade.css",
+    "static/js/main.61193f56.js"
   ]
 }
