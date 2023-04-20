@@ -31,7 +31,7 @@ function Navbar ({ currentPage }) {
     },
     {
       title: "CONTACT 联系我们",
-      link: "/rectDemo/contact",
+      link: "/contact",
       submenu: []
     }
   ]

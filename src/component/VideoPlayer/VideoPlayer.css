@@ -1,0 +1,11 @@
+.video-block-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.video-player {
+  width: 925px;
+  height: 532px;
+}
