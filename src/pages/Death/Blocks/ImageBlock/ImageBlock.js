@@ -42,13 +42,12 @@ const ImageBlock = () => {
 
   const images = [DL7, DL8, DL9, DL1, DL2, DL3, DL4, DL5, DL6]
   const preimg = [dl7, dl8, dl9, dl1, dl2, dl3, dl4, dl5, dl6]
-  const items = ["item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9"]
   return (
     <>
       <div className="block-div">
         <div className="grid-container">
           {images.map((img, index) => (
-            <ImageView className={`grid-item ${items[index]}`} src={preimg[index]} preview={img} />
+            <ImageView className={`grid-item`} src={preimg[index]} preview={img} />
           ))
           }
         </div>

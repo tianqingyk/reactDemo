@@ -2,10 +2,11 @@
 
 .footer {
   background-color: white;
-  padding: 20px;
+  padding: 40px;
   display: flex;
   justify-content: center;
   height: 5%;
+  margin-top: 10px;
 }
 
 .footer-title {

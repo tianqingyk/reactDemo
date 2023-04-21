@@ -17,13 +17,13 @@ const Block2 = () => {
     <div className='divStyle2'>
       <div style={{ float: "right", width: '70%', color: 'white' }}>
         <FloatingDiv containerClassName='center-container' direction='right-to-left' style={{ height: '64px', animationDelay: '1.5 s' }}>
-          <TextDiv className='title-style' content='COLLECTION' boldWords={['COLLECTION']} align='left' width='430px' />
+          <TextDiv className='title-style' content='COLLECTION' boldWords={['COLLECTION']} align='right' width='430px' />
         </FloatingDiv>
         <FloatingDiv containerClassName='center-container' direction='right-to-left' style={{ height: '114px', marginTop: '40px' }}>
-          <TextDiv className='english-style' content={englishText} boldWords={['RONGTONG']} align="left" lineHeight={2} width='430px' />
+          <TextDiv className='english-style' content={englishText} boldWords={['RONGTONG']} align="right" lineHeight={2} width='430px' />
         </FloatingDiv >
         <FloatingDiv containerClassName='center-container' direction='right-to-left' style={{ height: '70px', marginTop: '20px', animationDelay: '1s' }}>
-          <TextDiv className='chinese-style' content={chineseText} align="left" lineHeight={2} width='430px' />
+          <TextDiv className='chinese-style' content={chineseText} align="right" lineHeight={2} width='430px' />
         </FloatingDiv>
       </div>
 
