@@ -25,7 +25,7 @@ const Block3 = () => {
             <FloatingDiv containerClassName='center-container' className='slide1FloatingDiv' direction="top-to-bottom" >
               <TextDiv className='english-style' align='center' content={slide1English} fontSize='22px' lineHeight='1' />
               <TextDiv className='Chinese-style' aligh='center' content={slide1Chinese} fontSize='22px' lineHeight='0' />
-              <ClickButton />
+              <ClickButton link="/death" />
             </FloatingDiv>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Block3 = () => {
           <FloatingDiv containerClassName='slide2FloatingDiv3'>
             <TextDiv className='english-style' align='center' content={slide2English} fontSize='22px' lineHeight='1' />
             <TextDiv className='Chinese-style' aligh='center' content={slide2Chinese} fontSize='20px' lineHeight='0' />
-            <ClickButton />
+            <ClickButton link="/deconstruction" />
           </FloatingDiv>
         </div>
         <div className='slide3' style={{ color: "white" }}>
@@ -47,7 +47,7 @@ const Block3 = () => {
           <FloatingDiv containerClassName='center-container' className='slide3FloatingDiv2' direction="bottom-to-top" >
             <TextDiv className='english-style' align='center' content={slide3English} fontSize='22px' lineHeight='1' />
             <TextDiv className='Chinese-style' aligh='center' content={slide3Chinese} fontSize='22px' lineHeight='0' />
-            <ClickButton />
+            <ClickButton link="/salome" />
           </FloatingDiv>
         </div>
       </CarouselBlock >

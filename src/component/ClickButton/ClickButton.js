@@ -1,9 +1,10 @@
 import React, { useState } from "react"
 import './ClickButton.css'
 import TextDiv from "../TextDiv/TextDiv"
+import { Link } from "react-router-dom"
 
 
-const ClickButton = () => {
+const ClickButton = ({ link }) => {
   const [isHovered, setIsHovered] = useState(false)
 
   const handleClick = () => {
@@ -27,17 +28,20 @@ const ClickButton = () => {
   }
 
   return (
-    <div
-      style={divStyle}
-      onClick={handleClick}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <p style={{
-        textAlign: 'center',
-        verticalAlign: 'middle'
-      }}>CLICK HERE</p>
-    </div>
+    <Link to={link}>
+      <div
+        style={divStyle}
+        onClick={handleClick}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+
+        <p style={{
+          textAlign: 'center',
+          verticalAlign: 'middle'
+        }}>CLICK HERE</p>
+      </div>
+    </Link>
   )
 }
 
