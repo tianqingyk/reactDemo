@@ -79,8 +79,8 @@ const Block1 = () => {
           <ImageView src={dec4} preview={DEC4} width={246} height={346} />
         </div>
         <div className="text-div1">
-          <TextDiv className="text-style-1" content="The Chrysanthemum and the Sword" align="center" fontSize={20} lineHeight={0} />
-          <TextDiv className="text-style-2" content="DECONSTRUCTION BUSHIDO" align="center" fontSize={23} lineHeight={0} />
+          <TextDiv className="dec-text-style-1" content="The Chrysanthemum and the Sword" align="center" fontSize={20} lineHeight={0} />
+          <TextDiv className="dec-text-style-2" content="DECONSTRUCTION BUSHIDO" align="center" fontSize={23} lineHeight={0} />
         </div>
         <div className="dec-grid-container">
           <ImageView src={dec5} preview={DEC5} width={246} height={346} />
@@ -89,9 +89,9 @@ const Block1 = () => {
           <ImageView src={dec8} preview={DEC8} width={246} height={346} />
         </div>
         <div>
-          <TextDiv className="text-style-3" content={chineseText1} align="center" fontSize={16} lineHeight={1.5} />
-          <TextDiv className="text-style-4" content={chineseText2} align="center" fontSize={16} lineHeight={1.5} />
-          <TextDiv className="text-style-5" content={englishText1} align="center" fontSize={14} lineHeight={1.5} />
+          <TextDiv className="dec-text-style-3" content={chineseText1} align="center" fontSize={16} lineHeight={1.5} />
+          <TextDiv className="dec-text-style-4" content={chineseText2} align="center" fontSize={16} lineHeight={1.5} />
+          <TextDiv className="dec-text-style-5" content={englishText1} align="center" fontSize={14} lineHeight={1.5} />
         </div>
       </div>
     </>
@@ -120,7 +120,7 @@ const Block3 = () => {
     <>
       <div className="dec-block-div3">
         <div>
-          <TextDiv className="text-style-6" content="DESIGN PROCESS" boldWords={["DESIGN", "PROCESS"]} align="center" fontSize={14} lineHeight={1.5} />
+          <TextDiv className="dec-text-style-6" content="DESIGN PROCESS" boldWords={["DESIGN", "PROCESS"]} align="center" fontSize={14} lineHeight={1.5} />
         </div>
 
         <div className="dec-grid-container3">
