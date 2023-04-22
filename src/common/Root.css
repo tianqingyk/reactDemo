@@ -143,3 +143,9 @@
   font-family: 'reklamescriptw00-medium';
   src: url('/src/assets/fonts/Reklame\ Script\ Medium.otf') format('truetype');
 }
+
+@font-face {
+  font-family: 'cormorantgaramond-semibold';
+  src: url('/src/assets/fonts/CormorantGaramond-SemiBold.ttf')
+    format('truetype');
+}

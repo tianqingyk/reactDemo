@@ -16,24 +16,20 @@
   background-image: url('/src/UI/home/background2.jpg');
 }
 
-.title-style {
+.home-title-style {
   font-size: 43px;
   font-family: 'Oswald', sans-serif;
   justify-content: center;
 }
 
-.english-style {
+.home-english-style {
   font-family: 'Oswald-ExtraLight', sans-serif;
   font-weight: 100;
-  font-size: 15px;
-  letter-spacing: 0em;
 }
 
-.chinese-style {
-  font-family: sacramento, cursive;
+.home-chinese-style {
+  font-family: AvenirLTStd-Book, sacramento, cursive, sans-serif;
   font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 0em;
 }
 
 .center-container {

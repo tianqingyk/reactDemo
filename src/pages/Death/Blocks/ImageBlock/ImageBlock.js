@@ -63,7 +63,7 @@ const Div1 = () => {
   const preimg = [dl7, dl8, dl9, dl1, dl2, dl3, dl4, dl5, dl6]
   return (
     <>
-      <div className="block-div">
+      <div className="dl-block-div">
         <div className="grid-container">
           {images.map((img, index) => (
             <ImageView className={`grid-item`} src={preimg[index]} preview={img} />
@@ -72,7 +72,7 @@ const Div1 = () => {
         </div>
       </div>
       <div className="text-div-1">
-        <TextDiv className="text-style-1" content={englishText1} fontSize={10} />
+        <TextDiv className="dl-text-style-1" content={englishText1} fontSize={10} />
       </div>
     </>
   )
@@ -83,7 +83,7 @@ const Div2 = () => {
   const chineseText1 = `该设计成功登上法国《MOEVIR》杂志七月刊的封面`
   return (
     <>
-      <div className="block-div">
+      <div className="dl-block-div">
         <div className="grid-container2">
           <ImageView src={dl10} preview={DL10} width={536} height={349} />
           <ImageView src={dl11} preview={DL11} width={242} height={349} />
@@ -91,8 +91,8 @@ const Div2 = () => {
         </div>
       </div>
       <div className="text-div-2">
-        <TextDiv className="text-style-2" content={englishText2} fontSize={14} lineHeight={0} />
-        <TextDiv className="text-style-3" content={chineseText1} fontSize={14} lineHeight={0} />
+        <TextDiv className="dl-text-style-2" content={englishText2} fontSize={14} lineHeight={0} />
+        <TextDiv className="dl-text-style-3" content={chineseText1} fontSize={14} lineHeight={0} />
       </div>
     </>
   )
@@ -112,15 +112,15 @@ const Div3 = () => {
 
   return (
     <>
-      <div className="block-div">
+      <div className="dl-block-div">
         <div className="grid-container3">
           <ImageView src={dl13} preview={DL13} width={515} height={365} />
           <ImageView src={dl14} preview={DL14} width={515} height={365} />
         </div>
       </div>
       <div className="text-div-3">
-        <TextDiv className="text-style-4" content={english} align="center" fontSize={12} />
-        <TextDiv className="text-style-5" content={chinese} align="center" fontSize={15} />
+        <TextDiv className="dl-text-style-4" content={english} align="center" fontSize={12} />
+        <TextDiv className="dl-text-style-5" content={chinese} align="center" fontSize={15} />
       </div>
     </>
   )
@@ -130,11 +130,11 @@ const Div4 = () => {
   const english = `Death in Venice：Silhouettes`
   return (
     <>
-      <div className="block-div">
+      <div className="dl-block-div">
         <ImageView src={dl15} preview={DL15} width={1076} height={242} />
       </div>
       <div className="text-div-4">
-        <TextDiv className="text-style-6" content={english} align="center" fontSize={18} />
+        <TextDiv className="dl-text-style-6" content={english} align="center" fontSize={18} />
       </div>
     </>
   )
@@ -144,14 +144,14 @@ const Div5 = () => {
   const english = `Sketches，flat frawings，Prints and Shoe design`
   return (
     <>
-      <div className="block-div">
+      <div className="dl-block-div">
         <div className="grid-container4">
           <ImageView src={dl16} preview={DL16} width={704} height={384} />
           <ImageView src={dl17} preview={DL17} width={640} height={384} />
         </div>
       </div>
       <div className="text-div-4">
-        <TextDiv className="text-style-6" content={english} align="center" fontSize={18} />
+        <TextDiv className="dl-text-style-6" content={english} align="center" fontSize={18} />
       </div>
     </>
   )

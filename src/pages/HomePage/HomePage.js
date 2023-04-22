@@ -1,4 +1,4 @@
-import React from "react"
+import React, { forwardRef } from "react"
 import './HomePage.css'
 import TransparentDiv from "../../component/TransparentDiv/TransparentDiv"
 import Block1 from "./Block1"

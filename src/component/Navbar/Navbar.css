@@ -1,5 +1,6 @@
 .navbar-div {
   height: 80px;
+  margin-top: 40px;
 }
 
 .navbar {
@@ -66,8 +67,8 @@
   color: #333;
   font-size: 23px;
   transition: 0.3s;
-  font-family: cormorantgaramond-semibold, cormorantgaramond, cormorant garamond,
-    serif;
+  font-family: cormorantgaramond-semibold, cormorantgaramond, serif;
+  font-weight: 400;
 }
 
 .submenu {

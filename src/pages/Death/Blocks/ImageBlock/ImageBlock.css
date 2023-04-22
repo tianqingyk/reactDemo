@@ -1,4 +1,4 @@
-.block-div {
+.dl-block-div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +48,7 @@
   justify-content: center;
   align-items: center;
 }
-.text-style-1 {
+.dl-text-style-1 {
   font-family: AvenirLTStd-Book, sans-serif;
   color: black;
 }
@@ -59,11 +59,11 @@
   align-items: center;
   flex-direction: column;
 }
-.text-style-2 {
+.dl-text-style-2 {
   font-family: AvenirLTStd-Book, sans-serif;
   color: black;
 }
-.text-style-3 {
+.dl-text-style-3 {
   font-family: sacramento, cursive;
   color: black;
 }
@@ -74,13 +74,13 @@
   align-items: center;
   flex-direction: column;
 }
-.text-style-4 {
+.dl-text-style-4 {
   font-family: AvenirLTStd-Book, sans-serif;
   font-weight: 100;
   color: #364a7b;
   margin-bottom: 0;
 }
-.text-style-5 {
+.dl-text-style-5 {
   margin-top: 0;
   font-family: sacramento, cursive;
   color: #5570b4;
@@ -92,7 +92,7 @@
   align-items: center;
   flex-direction: column;
 }
-.text-style-6 {
+.dl-text-style-6 {
   font-family: AvenirLTStd-Book, sans-serif;
   font-weight: 100;
   color: black;

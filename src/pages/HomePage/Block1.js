@@ -9,15 +9,15 @@ const Block1 = () => {
 
   return (
     <div className='divStyle1'>
-      <div style={{ float: 'left', width: '70%' }}>
+      <div style={{ float: 'left', width: '70%', color: "black" }}>
         <FloatingDiv containerClassName='center-container' style={{ height: '64px', animationDelay: '0.5s' }}>
-          <TextDiv className='title-style' content='RONGTONG' boldWords={['RONGTONG']} align='left' width='385px' />
+          <TextDiv className='home-title-style' content='RONGTONG' boldWords={['RONGTONG']} align='left' width='385px' />
         </FloatingDiv>
         <FloatingDiv containerClassName='center-container' style={{ height: '114px', marginTop: '40px' }}>
-          <TextDiv className='english-style' content={englishText} boldWords={['RONGTONG']} align="left" lineHeight={2} width='385px' />
+          <TextDiv className='home-english-style' content={englishText} boldWords={['RONGTONG']} align="left" lineHeight={2} width='385px' />
         </FloatingDiv >
         <FloatingDiv containerClassName='center-container' style={{ height: '70px', marginTop: '20px', animationDelay: '0.7s' }}>
-          <TextDiv className='chinese-style' content={chineseText} align="left" lineHeight={2} width='385px' />
+          <TextDiv className='home-chinese-style' content={chineseText} align="left" lineHeight={2} width='385px' />
         </FloatingDiv>
       </div>
 

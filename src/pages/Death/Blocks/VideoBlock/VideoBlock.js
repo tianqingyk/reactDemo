@@ -15,7 +15,7 @@ const VideoBlock = () => {
   return (
     <>
       <VideoPlayer />
-      <div className="text-div">
+      <div className="dl-text-div">
         <TextDiv className="english-style" content={englishText} align="center" fontSize={12} lineHeight={1.5} />
         <TextDiv className="chinese-style" content={chineseText} align="center" fontSize={12} lineHeight={1.5} />
       </div>
