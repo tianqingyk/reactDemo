@@ -1,0 +1,16 @@
+.img-frame-div {
+  --s: 200px;
+  --b: 6px;
+  --c: #cb4d4d;
+  --cb: rgb(217, 34, 34);
+  --sc: 1;
+
+  width: var(--s);
+  height: var(--s);
+  cursor: pointer;
+  border: 1px solid rgb(225, 111, 111);
+  border-radius: 0 0 999px 999px;
+  --g: 50% / calc(100% / var(--sc)) 100% no-repeat content-box;
+  --o: calc((1 / var(--sc) -1) * var(--s) / 2 - var(--b));
+  outline: var(--b) solid var(--c);
+}
