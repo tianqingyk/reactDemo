@@ -3,17 +3,16 @@
 .home-page {
   display: flex;
   flex-direction: column;
-  height: 300vh;
   overflow: hidden;
 }
 
 .transparentDivStyle {
-  height: 17%;
+  height: 645px;
   background-image: url('/src/UI/home/background.jpg');
 }
 
 .transparentDivStyle2 {
-  height: 12%;
+  height: 645px;
   background-image: url('/src/UI/home/background2.jpg');
 }
 

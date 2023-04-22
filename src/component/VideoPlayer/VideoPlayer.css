@@ -8,4 +8,8 @@
 .video-player {
   width: 925px;
   height: 532px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

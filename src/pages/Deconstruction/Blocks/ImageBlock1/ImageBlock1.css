@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: black;
+  flex-direction: column;
 }
 
 .dec-grid-container {
@@ -10,11 +12,17 @@
   width: 984px;
 }
 
+.text-div1 {
+  background-color: black;
+  height: 70px;
+}
+
 .dec-block-div2 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  background-color: black;
 }
 
 .dec-grid-container1 {
@@ -35,7 +43,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .dec-grid-container3 {
@@ -44,4 +53,34 @@
   grid-template-columns: repeat(4, 1fr);
   width: 996px;
   height: 690px;
+}
+
+.text-style-1 {
+  color: #ffffff;
+  font-family: AvenirLTStd-Book, sans-serif;
+}
+
+.text-style-2 {
+  color: #ffffff;
+  font-family: avenir-lt-w01_35-light1475496, sans-serif;
+}
+
+.text-style-3 {
+  color: #ffffff;
+  font-family: nellroundhandw01-scrip, cursive, sans-serif;
+}
+
+.text-style-4 {
+  color: #ffffff;
+  font-family: snellroundhand, cursive, sans-serif;
+}
+
+.text-style-5 {
+  color: #ffffff;
+  font-family: oswald, sans-serif;
+}
+
+.text-style-6 {
+  color: black;
+  font-family: oswald, sans-serif;
 }

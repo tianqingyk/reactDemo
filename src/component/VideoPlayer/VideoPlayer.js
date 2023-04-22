@@ -1,22 +1,14 @@
-import React, { useRef } from 'react'
-import Player from '@pansy/react-aliplayer'
+import React, { useState } from 'react'
+import ReactPlayer from 'react-player/lazy'
 import './VideoPlayer.css'
 
 const VideoPlayer = () => {
-  const playerRef = useRef(null)
-
   return (
     <div className='video-block-style'>
       <div className='vide-player'>
-        <Player
-          source={require('../../UI/death/video.mp4')}
-          hideControlbar={true}
-          style={{ width: 925, height: 500 }}
-          ref={playerRef}
-        />
+        <ReactPlayer controls url={require('../../UI/death/video.mp4')} width={925} height={500} />
       </div>
     </div>
-
   )
 }
 

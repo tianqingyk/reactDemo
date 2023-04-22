@@ -1,6 +1,7 @@
 import React from "react"
 import "./ImageBlock1.css"
 import ImageView from "../../../../component/ImageView/ImageView"
+import TextDiv from "../../../../component/TextDiv/TextDiv"
 import DEC1 from "../../../../UI/deconstruction/DEC-1.png"
 import DEC2 from "../../../../UI/deconstruction/DEC-2.png"
 import DEC3 from "../../../../UI/deconstruction/DEC-3.png"
@@ -46,6 +47,30 @@ const ImageBlock1 = () => {
 
   return (
     <>
+      <Block1 />
+      <Block2 />
+      <Block3 />
+    </>
+  )
+}
+
+const Block1 = () => {
+
+  const chineseText1 = `一次女士西装的设计
+  ​一次关于日式服装的变革
+  一次关于都市人群与丛林盔甲之间的讨论
+  一次关于结绳，皮革，金属之间的工艺探索
+  
+  `
+  const chineseText2 = `一共22块皮革，92块金属环，92个结绳，由设计师从设计打版到切割缝
+  制，再到最后的摄影呈现：
+  《解构武士道》`
+
+  const englishText1 = `PHOTOSHOOT
+  PHOTOGRAPHER: JIARONG XIE
+  MODEL: YUTZU KANG`
+  return (
+    <>
       <div className="dec-block-div">
         <div className="dec-grid-container">
           <ImageView src={dec1} preview={DEC1} width={246} height={346} />
@@ -53,17 +78,29 @@ const ImageBlock1 = () => {
           <ImageView src={dec3} preview={DEC3} width={246} height={346} />
           <ImageView src={dec4} preview={DEC4} width={246} height={346} />
         </div>
-      </div>
-
-      <div className="dec-block-div">
+        <div className="text-div1">
+          <TextDiv className="text-style-1" content="The Chrysanthemum and the Sword" align="center" fontSize={20} lineHeight={0} />
+          <TextDiv className="text-style-2" content="DECONSTRUCTION BUSHIDO" align="center" fontSize={23} lineHeight={0} />
+        </div>
         <div className="dec-grid-container">
           <ImageView src={dec5} preview={DEC5} width={246} height={346} />
           <ImageView src={dec6} preview={DEC6} width={246} height={346} />
           <ImageView src={dec7} preview={DEC7} width={246} height={346} />
           <ImageView src={dec8} preview={DEC8} width={246} height={346} />
         </div>
+        <div>
+          <TextDiv className="text-style-3" content={chineseText1} align="center" fontSize={16} lineHeight={1.5} />
+          <TextDiv className="text-style-4" content={chineseText2} align="center" fontSize={16} lineHeight={1.5} />
+          <TextDiv className="text-style-5" content={englishText1} align="center" fontSize={14} lineHeight={1.5} />
+        </div>
       </div>
+    </>
+  )
+}
 
+const Block2 = () => {
+  return (
+    <>
       <div className="dec-block-div2">
         <div className="dec-grid-container1">
           <ImageView src={dec9} width={525} height={700} />
@@ -74,8 +111,18 @@ const ImageBlock1 = () => {
           <ImageView src={dec12} width={454} height={596} />
         </div>
       </div>
+    </>
+  )
+}
 
+const Block3 = () => {
+  return (
+    <>
       <div className="dec-block-div3">
+        <div>
+          <TextDiv className="text-style-6" content="DESIGN PROCESS" boldWords={["DESIGN", "PROCESS"]} align="center" fontSize={14} lineHeight={1.5} />
+        </div>
+
         <div className="dec-grid-container3">
           <ImageView src={dec1_1} preview={DEC1_1} width={249} height={350} />
           <ImageView src={dec1_2} preview={DEC1_2} width={249} height={350} />

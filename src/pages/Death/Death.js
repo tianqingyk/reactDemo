@@ -2,13 +2,13 @@ import React from "react"
 import './Death.css'
 import Navbar from "../../component/Navbar/Navbar"
 import ImageBlock from "./Blocks/ImageBlock/ImageBlock"
-import VideoPlayer from "../../component/VideoPlayer/VideoPlayer"
+import VideoBlock from "./Blocks/VideoBlock/VideoBlock"
 
 const Death = () => {
 
   return (
     <>
-      <VideoPlayer />
+      <VideoBlock />
       <ImageBlock />
       <Navbar currentPage="/death" />
     </>

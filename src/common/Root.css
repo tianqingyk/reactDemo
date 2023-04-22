@@ -108,3 +108,38 @@
   font-family: 'Helvetica';
   src: url('/src/assets/fonts/Helvetica\ Verbundene.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'AvenirLTStd-Black';
+  src: url('/src/assets/fonts/AvenirLTStd-Black.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-Book';
+  src: url('/src/assets/fonts/AvenirLTStd-Book.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-Roman';
+  src: url('/src/assets/fonts/AvenirLTStd-Roman.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'snellroundhand';
+  src: url('/src/assets/fonts/SnellRoundhandW01Script.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'sacramento';
+  src: url('/src/assets/fonts/Sacramento-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'worksans-extralight';
+  src: url('/src/assets/fonts/WorkSans-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'reklamescriptw00-medium';
+  src: url('/src/assets/fonts/Reklame\ Script\ Medium.otf') format('truetype');
+}

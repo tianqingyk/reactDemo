@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .grid-container {
@@ -40,4 +41,60 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   width: 1354px;
+}
+
+.text-div-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-style-1 {
+  font-family: AvenirLTStd-Book, sans-serif;
+  color: black;
+}
+
+.text-div-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text-style-2 {
+  font-family: AvenirLTStd-Book, sans-serif;
+  color: black;
+}
+.text-style-3 {
+  font-family: sacramento, cursive;
+  color: black;
+}
+
+.text-div-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text-style-4 {
+  font-family: AvenirLTStd-Book, sans-serif;
+  font-weight: 100;
+  color: #364a7b;
+  margin-bottom: 0;
+}
+.text-style-5 {
+  margin-top: 0;
+  font-family: sacramento, cursive;
+  color: #5570b4;
+}
+
+.text-div-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text-style-6 {
+  font-family: AvenirLTStd-Book, sans-serif;
+  font-weight: 100;
+  color: black;
+  margin-bottom: 0;
 }

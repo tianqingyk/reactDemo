@@ -1,0 +1,20 @@
+.sal-img-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 2392px;
+}
+
+.sal-grid-container1 {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  height: 2392px;
+}
+
+.sal-grid-container2 {
+  margin-left: 20px;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  height: 2392px;
+}

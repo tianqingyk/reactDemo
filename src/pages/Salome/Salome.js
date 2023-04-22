@@ -2,6 +2,7 @@ import React from "react"
 import './Salome.css'
 import Navbar from "../../component/Navbar/Navbar"
 import SalBlock1 from "./Block1/SalBlock1"
+import SalBlock2 from "./Block2/SalBlock2"
 
 
 const Salome = () => {
@@ -9,6 +10,7 @@ const Salome = () => {
   return (
     <>
       <SalBlock1 />
+      <SalBlock2 />
       <Navbar currentPage="/salome" />
     </>
   )

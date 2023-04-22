@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image } from 'antd'
 
-const ImageView = ({ className, src, preview, width = 340, height = 453 }) => {
+const ImageView = ({ className, src, preview, width, height }) => {
 
   return (
     <Image

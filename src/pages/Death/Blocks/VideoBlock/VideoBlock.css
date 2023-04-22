@@ -1,0 +1,17 @@
+.text-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  height: 300px;
+}
+
+.english-style {
+  color: white;
+  font-family: AvenirLTStd-Book, sans-serif;
+}
+
+.chinese-style {
+  color: white;
+  font-family: sacramento, cursive;
+}

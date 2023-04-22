@@ -1,4 +1,85 @@
 .sal-block1 {
   height: 1242px;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-image: url('/src/UI/salome/background.jpg');
+  margin-bottom: 5px;
+  justify-content: center;
+}
+
+.text-div {
+  width: 800px;
+  height: 100%;
+  background-color: rgba(66, 2, 2, 0.41);
+  display: flex;
+  flex-direction: column;
+}
+
+.row1-div {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 340px;
+  height: 40px;
+  margin-right: 456px;
+  margin-top: 0;
+}
+
+.text-style {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+
+.row2-div {
+  margin-top: 80px;
+  margin-right: 680px;
+  height: 30px;
+}
+
+.row3-div {
+  margin-top: 240px;
+  margin-right: 0;
+  margin-bottom: 0;
+  height: 0;
+}
+
+.text-style-2 {
+  color: white;
+  font-family: snellroundhand, cursive;
+}
+
+.row4-div {
+  margin-right: 660px;
+  margin-top: 0;
+  height: 20px;
+}
+
+.row5-div {
+  margin-right: 400px;
+  margin-top: 200px;
+  height: 20px;
+}
+
+.text-style-3 {
+  color: white;
+  font-family: worksans-extralight, work sans, sans-serif;
+}
+
+.row6-div {
+  margin-right: 400px;
+  margin-top: 200px;
+  height: 20px;
+}
+
+.text-style-4 {
+  font-family: reklamescriptw00-medium, cursive;
+}
+
+.row7-div {
+  margin-right: 0;
+  margin-top: 200px;
+  height: 20px;
 }

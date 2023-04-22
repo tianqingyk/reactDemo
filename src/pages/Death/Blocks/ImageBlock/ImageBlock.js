@@ -1,6 +1,8 @@
 import React from "react"
 import './ImageBlock.css'
 import ImageView from "../../../../component/ImageView/ImageView"
+import TextDiv from "../../../../component/TextDiv/TextDiv"
+
 import DL1 from "../../../../UI/death/DL-1.jpg"
 import DL2 from "../../../../UI/death/DL-2.jpg"
 import DL3 from "../../../../UI/death/DL-3.jpg"
@@ -40,6 +42,23 @@ import dl17 from "../../../../UI/death/dl17.jpg"
 
 const ImageBlock = () => {
 
+
+
+
+  return (
+    <>
+      <Div1 />
+      <Div2 />
+      <Div3 />
+      <Div4 />
+      <Div5 />
+      <div style={{ height: "100px" }}></div>
+    </>
+  )
+}
+
+const Div1 = () => {
+  const englishText1 = `2022 Deauville Paris, Photographer: Dong Li, Model: Mathieu Gaucher, Brand: RONGTONG`
   const images = [DL7, DL8, DL9, DL1, DL2, DL3, DL4, DL5, DL6]
   const preimg = [dl7, dl8, dl9, dl1, dl2, dl3, dl4, dl5, dl6]
   return (
@@ -52,7 +71,18 @@ const ImageBlock = () => {
           }
         </div>
       </div>
+      <div className="text-div-1">
+        <TextDiv className="text-style-1" content={englishText1} fontSize={10} />
+      </div>
+    </>
+  )
+}
 
+const Div2 = () => {
+  const englishText2 = `Cover for MOEVIR,JULY,2022​`
+  const chineseText1 = `该设计成功登上法国《MOEVIR》杂志七月刊的封面`
+  return (
+    <>
       <div className="block-div">
         <div className="grid-container2">
           <ImageView src={dl10} preview={DL10} width={536} height={349} />
@@ -60,23 +90,68 @@ const ImageBlock = () => {
           <ImageView src={dl12} preview={DL12} width={242} height={349} />
         </div>
       </div>
+      <div className="text-div-2">
+        <TextDiv className="text-style-2" content={englishText2} fontSize={14} lineHeight={0} />
+        <TextDiv className="text-style-3" content={chineseText1} fontSize={14} lineHeight={0} />
+      </div>
+    </>
+  )
+}
 
+const Div3 = () => {
+  const english = `three ideas:
+  Firstly, the style particular of Tadzio, namely the navy collar and bright stripes;
+  Secondly, Tadzio's sequel by Aschenbach from the beginning to end, like a shadow under the light. I try to turn metaphor into design;
+  Thirdly, the point at which I'm very interested lies in the fact that in the face of the plague, most people of that time have tended to say prayers. I like 
+  much the scene of the church in the movie... I don't want to make a collection that is too religious, but i don't mind extract certain elements.`
+  const chinese = `元素提炼：
+  威尼斯的拜占庭建筑
+  电影里作家的缪斯-塔其奥的着装风格
+  疫情下的宗教信仰以及对应的服装元素
+  老电影的光与影对比`
+
+  return (
+    <>
       <div className="block-div">
         <div className="grid-container3">
           <ImageView src={dl13} preview={DL13} width={515} height={365} />
           <ImageView src={dl14} preview={DL14} width={515} height={365} />
         </div>
       </div>
+      <div className="text-div-3">
+        <TextDiv className="text-style-4" content={english} align="center" fontSize={12} />
+        <TextDiv className="text-style-5" content={chinese} align="center" fontSize={15} />
+      </div>
+    </>
+  )
+}
 
+const Div4 = () => {
+  const english = `Death in Venice：Silhouettes`
+  return (
+    <>
       <div className="block-div">
         <ImageView src={dl15} preview={DL15} width={1076} height={242} />
       </div>
+      <div className="text-div-4">
+        <TextDiv className="text-style-6" content={english} align="center" fontSize={18} />
+      </div>
+    </>
+  )
+}
 
+const Div5 = () => {
+  const english = `Sketches，flat frawings，Prints and Shoe design`
+  return (
+    <>
       <div className="block-div">
         <div className="grid-container4">
           <ImageView src={dl16} preview={DL16} width={704} height={384} />
           <ImageView src={dl17} preview={DL17} width={640} height={384} />
         </div>
+      </div>
+      <div className="text-div-4">
+        <TextDiv className="text-style-6" content={english} align="center" fontSize={18} />
       </div>
     </>
   )
