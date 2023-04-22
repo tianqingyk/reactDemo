@@ -32,28 +32,28 @@ const SalBlock1 = () => {
   return (
     <>
       <div className="sal-block1">
-        <div className="text-div">
-          <div className="row1-div">
-            <TextDiv className="text-style" content="SALOMÉ" fontSize={56} align="left" />
-            <TextDiv className="text-style" content=" 2019-2020" fontSize={34} align="left" />
+        <div className="sal-text-div">
+          <div className="sal-row1-div">
+            <TextDiv className="sal-text-style" content="SALOMÉ" fontSize={56} align="left" />
+            <TextDiv className="sal-text-style" content=" 2019-2020" fontSize={34} align="left" />
           </div>
-          <div className="row2-div">
-            <TextDiv className="text-style" content="FLAMENCO" fontSize={25} align="left" />
+          <div className="sal-row2-div">
+            <TextDiv className="sal-text-style" content="FLAMENCO" fontSize={25} align="left" />
           </div>
-          <div className="row3-div">
-            <TextDiv className="text-style-2" content={english1} fontSize={19} align="left" />
+          <div className="sal-row3-div">
+            <TextDiv className="sal-text-style-2" content={english1} fontSize={19} align="left" />
           </div>
-          <div className="row4-div">
-            <TextDiv className="text-style" content="INSIPIRATION" fontSize={22} align="left" />
+          <div className="sal-row4-div">
+            <TextDiv className="sal-text-style" content="INSIPIRATION" fontSize={22} align="left" />
           </div>
-          <div className="row5-div">
-            <TextDiv className="text-style-3" content={english2} fontSize={16} align="left" />
+          <div className="sal-row5-div">
+            <TextDiv className="sal-text-style-3" content={english2} fontSize={16} align="left" />
           </div>
-          <div className="row6-div">
-            <TextDiv className="text-style-4" content={chinese1} fontSize={16} align="left" />
+          <div className="sal-row6-div">
+            <TextDiv className="sal-text-style-4" content={chinese1} fontSize={16} align="left" />
           </div>
-          <div className="row7-div">
-            <TextDiv className="text-style-4" content={chinese2} fontSize={18} align="left" />
+          <div className="sal-row7-div">
+            <TextDiv className="sal-text-style-4" content={chinese2} fontSize={18} align="left" />
           </div>
         </div>
 
