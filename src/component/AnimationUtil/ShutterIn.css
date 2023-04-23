@@ -1,0 +1,22 @@
+.shutter-in-left {
+  animation-name: shutter-in-left;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  overflow: visible;
+}
+@keyframes shutter-in-left {
+  0% {
+    transform: translateX(-100%);
+    transform-origin: left;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    transform-origin: left;
+    opacity: 1;
+  }
+}

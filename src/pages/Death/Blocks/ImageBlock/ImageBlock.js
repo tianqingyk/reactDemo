@@ -115,8 +115,13 @@ const Div3 = () => {
     <>
       <div className="dl-block-div">
         <div className="grid-container3">
-          <ImageView src={dl13} preview={DL13} width={515} height={365} />
-          <ImageView src={dl14} preview={DL14} width={515} height={365} />
+          <AnimationUtil animation="fade-in">
+            <ImageView src={dl13} preview={DL13} width={515} height={365} />
+          </AnimationUtil>
+          <AnimationUtil animation="fade-in">
+            <ImageView src={dl14} preview={DL14} width={515} height={365} />
+          </AnimationUtil>
+
         </div>
       </div>
       <div className="text-div-3">
@@ -132,7 +137,7 @@ const Div4 = () => {
   return (
     <>
       <div className="dl-block-div">
-        <AnimationUtil animation="swing-in-bck">
+        <AnimationUtil animation="scale-up-center">
           <ImageView src={dl15} preview={DL15} width={1076} height={242} />
         </AnimationUtil>
       </div>

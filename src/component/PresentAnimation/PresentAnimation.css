@@ -1,0 +1,27 @@
+.main-div {
+  position: relative;
+  display: flex;
+  margin: 0;
+}
+
+.mask-div {
+  position: absolute;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+}
+
+.present-div {
+  position: absolute;
+  top: 0;
+  animation: slide-left 1s;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

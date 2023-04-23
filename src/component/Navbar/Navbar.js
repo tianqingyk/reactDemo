@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import "./Navbar.css"
 import FloatingDiv from "../FloatingDiv/FloatingDiv"
+import AnimationUtil from "../AnimationUtil/AnimationUtil"
+import PresentAnimation from "../PresentAnimation/PresentAnimation"
 
 function Navbar ({ currentPage }) {
 
@@ -40,19 +42,22 @@ function Navbar ({ currentPage }) {
 
   return (
     <div className="navbar-div" onMouseLeave={() => setSubmenu(null)}>
-      <nav className="navbar">
-        {menuItems.map((item, index) => (
-          <NavItem
-            key={index}
-            title={item.title}
-            link={item.link}
-            submenu={item.submenu}
-            isActive={currentPage === item.link || (item.submenu && item.submenu.find((v) => v.link === currentPage))}
-            currentPage={currentPage}
-            setSubmenu={setSubmenu}
-          />
-        ))}
-      </nav>
+
+      <PresentAnimation mainHeight={80} mainWidth={900} childWidth={900} childHeight={80} maskLeft={190}>
+        <nav className="navbar">
+          {menuItems.map((item, index) => (
+            <NavItem
+              key={index}
+              title={item.title}
+              link={item.link}
+              submenu={item.submenu}
+              isActive={currentPage === item.link || (item.submenu && item.submenu.find((v) => v.link === currentPage))}
+              currentPage={currentPage}
+              setSubmenu={setSubmenu}
+            />
+          ))}
+        </nav>
+      </PresentAnimation>
 
       {submenu && submenu.length > 0 && (
         <nav className="submenu">
@@ -78,9 +83,9 @@ function NavItem ({ title, link, submenu, isActive, currentPage, setSubmenu }) {
     setSubmenu(submenu)
   }
   return (
-    <FloatingDiv direction="left-to-right">
+    <>
       <div
-        className={` ${submenu.length > 0 ? 'nav-item' : 'nav-item-default'} `}
+        className={` ${submenu.length > 0 ? 'nav-item' : 'nav-item-default'}`}
         onMouseEnter={handleMouseEnter}
       >
         <a
@@ -90,7 +95,7 @@ function NavItem ({ title, link, submenu, isActive, currentPage, setSubmenu }) {
           {title}
         </a>
       </div >
-    </FloatingDiv>
+    </>
   )
 }
 

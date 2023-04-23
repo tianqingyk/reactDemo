@@ -1,14 +1,17 @@
 .navbar-div {
   height: 80px;
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .navbar {
   display: flex;
   background-color: #fff;
   justify-content: center;
-  height: 20px;
-  margin-left: 36px;
+  margin-left: 150px;
 }
 
 .nav-item-default {
@@ -77,7 +80,7 @@
   background-color: #fff;
   justify-content: center;
   height: 40px;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .submenu-item {
