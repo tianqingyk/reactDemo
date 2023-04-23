@@ -1,0 +1,25 @@
+.gallery-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.gallery-nar-bar {
+  margin-left: 10px;
+  width: 999px;
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-text-div {
+  width: 316px;
+  font-size: 19px;
+  font-family: sacramento, cursive;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

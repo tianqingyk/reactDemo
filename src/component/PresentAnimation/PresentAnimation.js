@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import "./PresentAnimation.css"
 
 
-const PresentAnimation = ({ children, mainWidth, mainHeight, childWidth, childHeight, maskLeft = 0 }) => {
+const PresentAnimation = ({ children, mainWidth, mainHeight, childWidth, childHeight, maskLeft = 0, maskLv = 999 }) => {
 
   const [isVisible, setIsVisible] = useState(false)
   const ref = useRef(null)
@@ -34,12 +34,14 @@ const PresentAnimation = ({ children, mainWidth, mainHeight, childWidth, childHe
   const maskDivStyle = {
     width: childWidth,
     height: childHeight,
-    left: maskLeft - childWidth
+    left: maskLeft - childWidth,
+    zIndex: maskLv,
   }
 
   const presentDivStyle = {
     width: childWidth,
     height: childHeight,
+    zIndex: maskLv - 1,
   }
 
   return (
