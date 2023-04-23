@@ -7,7 +7,7 @@ const CarouselBlock = ({ children }) => {
 
   return (
     <div style={{ position: 'relative' }}>
-      <Carousel autoplay arrows prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
+      <Carousel arrows prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
         {children.map((child) => <div>{child}</div>)}
       </Carousel>
     </div >

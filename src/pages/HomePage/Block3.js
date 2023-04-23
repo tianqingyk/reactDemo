@@ -43,7 +43,9 @@ const Block3 = () => {
           </FloatingDiv>
         </div>
         <div className='slide3' style={{ color: "white" }}>
-          <FloatingDiv containerClassName='slider3Container' className='slide3FloatingDiv1' direction="top-to-bottom" />
+          <FloatingDiv containerClassName='slider3Container' direction="top-to-bottom" >
+            <img src={require("../../UI/home/2.webp")} height="387px" width="100%" />
+          </FloatingDiv>
           <FloatingDiv containerClassName='center-container' className='slide3FloatingDiv2' direction="bottom-to-top" >
             <TextDiv className='home-english-style' align='center' content={slide3English} fontSize='22px' lineHeight='1' />
             <TextDiv className='home-chinese-style' aligh='center' content={slide3Chinese} fontSize='22px' lineHeight='0' />

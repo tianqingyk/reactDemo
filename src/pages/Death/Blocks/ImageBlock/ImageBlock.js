@@ -39,6 +39,7 @@ import dl14 from "../../../../UI/death/dl14.jpg"
 import dl15 from "../../../../UI/death/dl15.jpg"
 import dl16 from "../../../../UI/death/dl16.jpg"
 import dl17 from "../../../../UI/death/dl17.jpg"
+import AnimationUtil from "../../../../component/AnimationUtil/AnimationUtil"
 
 const ImageBlock = () => {
 
@@ -131,7 +132,9 @@ const Div4 = () => {
   return (
     <>
       <div className="dl-block-div">
-        <ImageView src={dl15} preview={DL15} width={1076} height={242} />
+        <AnimationUtil animation="swing-in-bck">
+          <ImageView src={dl15} preview={DL15} width={1076} height={242} />
+        </AnimationUtil>
       </div>
       <div className="text-div-4">
         <TextDiv className="dl-text-style-6" content={english} align="center" fontSize={18} />
