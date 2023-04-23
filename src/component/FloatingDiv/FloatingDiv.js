@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import './FloatingDiv.css'
 
 const FloatingDiv = ({ children, containerClassName, className, direction = 'left-to-right', style }) => {
@@ -17,9 +17,31 @@ const FloatingDiv = ({ children, containerClassName, className, direction = 'lef
     }
   }
 
+  const [isVisible, setIsVisible] = useState(false)
+  const ref = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+          observer.unobserve(entry.target)
+        }
+      }
+    )
+    if (ref.current) {
+      observer.observe(ref.current)
+    }
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current)
+      }
+    }
+  }, [])
+
   return (
-    <div className={`${containerClassName}`}>
-      <div className={`floating-div ${getAnimationClass()} ${className}`} style={style}>{children}</div>
+    <div ref={ref} className={`${containerClassName}`}>
+      <div className={`floating-div ${isVisible ? getAnimationClass() : ""} ${className}`} style={style}>{children}</div>
     </div >
   )
 }

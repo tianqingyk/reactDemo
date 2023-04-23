@@ -3,11 +3,8 @@ import "./ImageFrame.css"
 
 const ImageFrame = ({ src, width, height }) => {
 
-  const w = width
-  const h = height
   const c = "#cb4d4d"
-  const cb = "rgb(217, 34, 34)"
-  const sc = 1
+
 
   const imgFrameDiv = {
     width: { width },
