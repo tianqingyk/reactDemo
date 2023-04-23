@@ -59,19 +59,23 @@ function Navbar ({ currentPage }) {
         </nav>
       </PresentAnimation>
 
-      {submenu && submenu.length > 0 && (
-        <nav className="submenu">
-          {submenu.map((item, index) => (
-            <SubItem
-              key={index}
-              title={item.title}
-              link={item.link}
-              isActive={currentPage === item.link}
-            />
-          ))}
-        </nav>
-      )
-      }
+      <nav className="submenu">
+        {submenu && submenu.length > 0 && (
+          <>
+            {
+              submenu.map((item, index) => (
+                <SubItem
+                  key={index}
+                  title={item.title}
+                  link={item.link}
+                  isActive={currentPage === item.link}
+                />
+              ))
+            }
+          </>
+        )
+        }
+      </nav>
 
     </div >
   )
