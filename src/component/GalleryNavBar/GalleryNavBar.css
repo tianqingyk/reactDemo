@@ -1,3 +1,11 @@
+a {
+  text-decoration: none;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
 .gallery-div {
   display: flex;
   justify-content: center;
@@ -16,6 +24,32 @@
 
 .gallery-text-div {
   width: 316px;
+  font-size: 19px;
+  font-family: sacramento, cursive;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0 solid;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: blue;
+}
+
+.gallery-text-div :hover {
+  transform: scale(1.2, 1.1);
+  background-color: pink;
+  width: 265px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-text-div-hover {
+  transform: scale(1, 1.1);
+  background-color: pink;
+  width: 265px;
+  margin-top: 2px;
   font-size: 19px;
   font-family: sacramento, cursive;
   color: black;
