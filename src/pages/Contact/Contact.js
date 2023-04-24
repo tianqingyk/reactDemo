@@ -1,9 +1,13 @@
-import React from "react"
+import React, { useEffect } from "react"
 import './Contact.css'
 import TextDiv from "../../component/TextDiv/TextDiv"
 import Navbar from "../../component/Navbar/Navbar"
 
 const Contact = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const content = `Designer: Jiarong Xie
   75012, Paris, France
