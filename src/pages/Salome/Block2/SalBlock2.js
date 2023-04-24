@@ -31,7 +31,7 @@ const SalBlock2 = () => {
       <div className="sal-img-block" >
         <div className="sal-grid-container1">
           {/* <ImageView src={sal1} preview={sal1} width={444} height={666} /> */}
-          <ImageFrame src={sal1} width={444} height={666} />
+          <ImageView src={sal1} width={444} height={666} />
           <ImageView src={sal2} preview={SAL2} width={442} height={312} />
           <ImageView src={sal3} preview={SAL3} width={444} height={312} />
           <ImageView src={sal4} preview={sal4} width={446} height={297} />
@@ -40,7 +40,7 @@ const SalBlock2 = () => {
         </div>
         <div className="sal-grid-container2">
           {/* <ImageView src={sal7} preview={sal7} width={636} height={424} /> */}
-          <ImageFrame src={sal7} width={636} height={424} />
+          <ImageView src={sal7} width={636} height={424} />
           <ImageView src={sal8} preview={SAL8} width={637} height={431} />
           <ImageView src={sal9} preview={SAL9} width={648} height={437} />
           <ImageView src={sal10} preview={SAL10} width={647} height={425} />

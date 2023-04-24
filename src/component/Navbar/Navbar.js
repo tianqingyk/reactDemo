@@ -91,14 +91,25 @@ function NavItem ({ title, link, submenu, isActive, currentPage, setSubmenu }) {
         className={` ${submenu.length > 0 ? 'nav-item' : 'nav-item-default'}`}
         onMouseEnter={handleMouseEnter}
       >
-        <Link to={link}>
+        {submenu.length <= 0 ?
+          <Link to={link}>
+            <div
+              href={isActive ? "#" : link}
+              className={`nav-text ${isActive ? "nav-text-hover" : ""} ${isActive || submenu.length > 0 ? "disabled" : ""}`}
+            >
+              {title}
+            </div>
+          </Link> :
           <div
             href={isActive ? "#" : link}
             className={`nav-text ${isActive ? "nav-text-hover" : ""} ${isActive || submenu.length > 0 ? "disabled" : ""}`}
           >
             {title}
           </div>
-        </Link>
+        }
+
+
+
       </div >
     </>
   )
