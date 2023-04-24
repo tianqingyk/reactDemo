@@ -12,14 +12,16 @@ const GalleryNavBar = ({ currentPage }) => {
       <div className="gallery-nar-bar">
         {textArry.map((text, index) =>
           <PresentAnimation mainWidth={333} childWidth={333} childHeight={50} maskLv={999 - 2 * index}>
-            <a
-              href={linkArry[index] === currentPage ? "#" : linkArry[index]}
-              className={linkArry[index] === currentPage ? "disabled" : ""}
-            >
-              <div className={` ${linkArry[index] !== currentPage ? "gallery-text-div" : " disable gallery-text-div-hover"}`} >
-                <sapn>{text}</sapn>
+            <Link to={linkArry[index]}>
+              <div
+                href={linkArry[index] === currentPage ? "#" : linkArry[index]}
+                className={linkArry[index] === currentPage ? "disabled" : ""}
+              >
+                <div className={` ${linkArry[index] !== currentPage ? "gallery-text-div" : " disable gallery-text-div-hover"}`} >
+                  <sapn>{text}</sapn>
+                </div>
               </div>
-            </a>
+            </Link>
 
           </PresentAnimation>
         )}

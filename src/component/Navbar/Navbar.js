@@ -1,8 +1,7 @@
 import React, { useState } from "react"
 import "./Navbar.css"
-import FloatingDiv from "../FloatingDiv/FloatingDiv"
-import AnimationUtil from "../AnimationUtil/AnimationUtil"
 import PresentAnimation from "../PresentAnimation/PresentAnimation"
+import { Link } from "react-router-dom"
 
 function Navbar ({ currentPage }) {
 
@@ -92,12 +91,14 @@ function NavItem ({ title, link, submenu, isActive, currentPage, setSubmenu }) {
         className={` ${submenu.length > 0 ? 'nav-item' : 'nav-item-default'}`}
         onMouseEnter={handleMouseEnter}
       >
-        <a
-          href={isActive ? "#" : link}
-          className={`nav-text ${isActive ? "nav-text-hover" : ""} ${isActive || submenu.length > 0 ? "disabled" : ""}`}
-        >
-          {title}
-        </a>
+        <Link to={link}>
+          <div
+            href={isActive ? "#" : link}
+            className={`nav-text ${isActive ? "nav-text-hover" : ""} ${isActive || submenu.length > 0 ? "disabled" : ""}`}
+          >
+            {title}
+          </div>
+        </Link>
       </div >
     </>
   )
@@ -108,12 +109,14 @@ function SubItem ({ title, link, isActive }) {
     <div
       className="submenu-item"
     >
-      <a
-        href={isActive ? "#" : link}
-        className={`submenu-text ${isActive ? "submenu-text-hover disabled" : ""}`}
-      >
-        {title}
-      </a>
+      <Link to={link}>
+        <div
+          href={isActive ? "#" : link}
+          className={`submenu-text ${isActive ? "submenu-text-hover disabled" : ""}`}
+        >
+          {title}
+        </div>
+      </Link>
     </div >
   )
 }

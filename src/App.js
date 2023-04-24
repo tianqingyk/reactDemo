@@ -1,6 +1,6 @@
 import './App.css'
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage/HomePage'
 import Header from './component/Header/Header'
 import Footer from './component/Footer/Footer'
@@ -16,16 +16,16 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Router>
-          <Routes>
-            <Route path="/" exact Component={HomePage} />
-            <Route path="/contact" Component={Contact} />
-            <Route path="/death" Component={Death} />
-            <Route path="/deconstruction" exact Component={Deconstruction} />
-            <Route path="/salome" Component={Salome} />
-            <Route Component={HomePage} />
-          </Routes>
-        </Router>
+
+        <Routes>
+          <Route path="/" exact Component={HomePage} />
+          <Route path="/contact" Component={Contact} />
+          <Route path="/death" Component={Death} />
+          <Route path="/deconstruction" Component={Deconstruction} />
+          <Route path="/salome" Component={Salome} />
+          <Route Component={HomePage} />
+        </Routes>
+
         <Footer />
       </div>
     )
