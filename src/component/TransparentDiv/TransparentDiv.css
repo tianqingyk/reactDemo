@@ -1,12 +1,12 @@
 .scrolling-bg {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  /* background-attachment: fixed; */
+  /* background-position: center; */
   /* overflow: hidden; */
 }
