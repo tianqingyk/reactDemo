@@ -20,7 +20,7 @@ const HomePage = () => {
         <Block2 />
         <Block3 />
         <div className="divStyle4" />
-        <TransparentDiv className='transparentDivStyle2' backgroundPositionY='30%' />
+        <TransparentDiv className='transparentDivStyle2' backgroundPositionY='-100%' />
       </div >
       <Navbar currentPage="/" />
     </>

@@ -4,7 +4,7 @@ import './TransparentDiv.css'
 
 const TransparentDiv = ({ children, className, backgroundPositionY }) => {
   const parallaxBg = useRef(null)
-  const scrollSpeed = 0.9
+  const scrollSpeed = 1.2
   const divStyle = {
     backgroundPositionY
   }
