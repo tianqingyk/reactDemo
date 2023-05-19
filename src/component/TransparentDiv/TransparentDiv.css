@@ -6,7 +6,10 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  /* background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed; */
   /* background-position: center; */
   /* overflow: hidden; */
 }
